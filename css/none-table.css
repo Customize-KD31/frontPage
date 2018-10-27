@@ -1,0 +1,57 @@
+.table ul{margin: 0;padding: 0;display: flex;list-style: none;}
+.table li{display: inline-block;text-align: center;}
+
+/*自行修改shili或者创建一个新的类*/
+.shili {margin: 0 auto;width: 600px;}
+.shili li{font-size: 16px;height: 25px;line-height: 25px;}
+.shili>ul:nth-child(1)>li{font-size: 17px;height: 30px;line-height: 30px;}
+
+/*浅黑->灰->白*/
+.c1>ul>li{color: rgba(59,62,71,1);}/*-----所有ul li的样式*/
+.c1>ul>li:nth-child(1){border-left: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c1>ul>li{border-right: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c1>ul:nth-child(1)>li{border-top: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c1>ul>li{border-bottom: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c1>ul:nth-child(odd)>li{background-color: rgba(254,254,254,1);}/*-----隔行变色*/
+.c1>ul:nth-child(even)>li{background-color: rgba(242,242,242,1);}/*-----隔行变色*/
+.c1>ul:nth-child(1)>li{background-color: rgba(59,62,71,1);}/*-----更改第一个ul li的背景颜色*/
+.c1>ul:nth-child(1)>li{color: rgba(236,236,238,1);font-weight: bold;}/*-----更改第一个ul li文字的颜色和大小*/
+
+/*灰绿->灰->白*/
+.c2>ul>li{color: rgba(59,62,71,1);}/*-----所有ul li的样式*/
+.c2>ul>li:nth-child(1){border-left: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c2>ul>li{border-right: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c2>ul:nth-child(1)>li{border-top: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c2>ul>li{border-bottom: 1px solid rgba(59,62,71,0.2);}/*-----所有边框线*/
+.c2>ul:nth-child(odd)>li{background-color: rgba(254,254,254,1);}/*-----隔行变色*/
+.c2>ul:nth-child(even)>li{background-color: rgba(242,242,242,1);}/*-----隔行变色*/
+.c2>ul:nth-child(1)>li{background-color: rgba(123,157,159,1);}/*-----更改第一个ul li的背景颜色*/
+.c2>ul:nth-child(1)>li{color: rgba(236,236,238,1);font-weight: bold;}/*-----更改第一个ul li文字的颜色和大小*/
+
+
+
+
+
+
+
+
+
+
+
+
+.w0_5{flex: 0.5;}.w1{flex: 1;}.w1_5{flex: 1.5;}.w2{flex: 2;}.w2_5{flex: 2.5;}.w3{flex: 3;}.w3_5{flex: 3.5;}.w4{flex: 4;}.w4_5{flex: 4.5;}.w5{flex: 5;}.w5_5{flex: 5.5;}.w6{flex: 6;}.w6_5{flex: 6.5;}.w7{flex: 7;}.w7_5{flex: 7.5;}.w8{flex: 8;}.w8_5{flex: 8.5;}.w9{flex: 9;}.w9_5{flex: 9.5;}.w10{flex: 10;}
+
+
+
+.details ul li{color: rgba(59,62,71,1);font-weight: bold;}/*-----所有ul li的样式*/
+.details ul li{border-bottom: 1px dashed rgba(59,62,71,0.2);}/*-----所有边框线*/
+.details ul:nth-child(odd) li{background-color: rgba(254,254,254,1);}/*-----隔行变色*/
+.details ul:nth-child(even) li{background-color: rgba(250,250,250,1);}/*-----隔行变色*/
+.details li{font-size: 16px;height: 35px;line-height: 30px;}
+.details ul:nth-child(1) li{background-color: rgba(244,67,54,1);}/*-----更改第一个ul li的背景颜色*/
+.details ul:nth-child(1) li{color: rgba(255,255,255,1);height: 40px;line-height: 40px;}/*-----更改第一个ul li文字的颜色和大小*/
+
+.details {margin: 20px auto;width: 760px;}
+.details .li-sum-box{text-align: right;font-size: 12px;font-weight: bold;}
+.details .li-sum-box span{font-style: normal;font-size: 18px;color: #F44336;}
+.details .li-sum-box span i{font-style: normal;}

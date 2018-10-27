@@ -1,0 +1,1083 @@
+@charset "utf-8";
+* {
+	font-family: "MicrosoftYaHei";
+	/*font-family: "MicrosoftYaHei", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;*/
+	padding: 0;
+	margin: 0;
+}
+
+
+/*顶部导航栏样式定义开始*/
+
+
+/*#web-navigation-index仅为Index页面的样式*/
+
+#web-navigation-index {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	z-index: 10;
+}
+
+#web-navigation-index .top-nav {
+	margin: 10px auto;
+	width: 800px;
+	text-align: center;
+}
+
+#web-navigation-index .top-nav ul {
+	display: block;
+	white-space: nowrap;
+}
+
+#web-navigation-index .top-nav li {
+	list-style: none;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+}
+
+#web-navigation-index .top-nav a {
+	display: block;
+	width: 80px;
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 0 10px #000000;
+}
+
+#web-navigation-index .top-nav a:hover {
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+#web-navigation-index .top-nav input[type=text] {
+	padding: 0 5px;
+	width: 260px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	border: 2px solid rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+
+#web-navigation-index .top-nav input[type=text]::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .5);
+}
+
+
+/*web-navigation为菜谱、菜谱详情、日の鲜、日の鲜详情的公共导航*/
+
+#web-navigation {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #efefef;
+	background-color: #fff;
+	z-index: 10;
+}
+
+#web-navigation .top-nav {
+	margin: 10px auto;
+	width: 800px;
+	text-align: center;
+}
+
+#web-navigation .top-nav ul {
+	display: block;
+	white-space: nowrap;
+}
+
+#web-navigation .top-nav li {
+	list-style: none;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+}
+
+#web-navigation .top-nav a {
+	display: block;
+	width: 80px;
+	color: #333333;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#web-navigation .top-nav a:hover {
+	color: #ffffff;
+	background-color: rgba(244, 67, 54, .6);
+}
+
+#web-navigation .top-nav input[type=text] {
+	padding: 0 5px;
+	width: 260px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #bfbfbf;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+
+
+/*首页和其他页面一致*/
+
+.top-nav input[type=submit] {
+	margin-left: -6px;
+	width: 80px;
+	height: 27px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f44336;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	outline: none;
+}
+
+.top-nav input[type=submit]:hover {
+	background-color: #ff6a00;
+}
+
+
+/*登录后的弹出菜单样式*/
+
+#user-menu {
+	display: none;
+	position: absolute;
+	padding: 5px;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	border-radius: 5px;
+	border: 1px solid #d8d8d8;
+	box-shadow: 10px 0px 30px rgba(0, 0, 0, .1);
+	background-color: #ffffff;
+	text-align: center;
+	z-index: 100;
+}
+
+#user-menu ul {
+	display: block;
+	white-space: nowrap;
+}
+
+#user-menu li {
+	list-style: none;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+#user-menu a {
+	display: block;
+	width: 80px;
+	color: #333333;
+	font-size: 15px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+#user-menu a:hover {
+	color: #ffffff;
+	background-color: #f44336;
+}
+
+
+/*顶部导航栏样式定义结束*/
+
+
+/*除首页外的所有主体框架样式*/
+
+#outer-frame {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	background-color: #ffffff;
+	z-index: 5;
+}
+
+
+/*recipes页面的公共样式*/
+
+#recipes-top {
+	width: 800px;
+	height: 280px;
+}
+
+
+/*热力榜样式开始*/
+
+#recipes-top-right {
+	display: inline-block;
+	width: 290px;
+	height: 280px;
+	border-right: 5px solid #efefef;
+	/*background-color: #F44336;*/
+	vertical-align: middle;
+}
+
+.hot-list-title-month {
+	margin-bottom: 10px;
+}
+
+.hot-list-title-year {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.hot-list-title {
+	margin-left: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+}
+
+.hot-list {
+	margin-left: 10px;
+	margin-right: 5px;
+	border-bottom: 1px dashed #f2f2f5;
+	height: 20px;
+}
+
+.hot-list:hover {
+	background-color: #f2f2f5;
+}
+
+.hot-list-num {
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f44336;
+}
+
+.hot-list a {
+	text-decoration: none;
+	color: #0078b6;
+}
+
+.hot-list-like {
+	font-size: 13px;
+	color: #666;
+}
+
+.hot-list-icon {
+	margin-left: 10px;
+	font-style: normal;
+	font-size: 13px;
+	text-align: center;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 2px;
+	color: #ffffff;
+}
+
+.icon-re {
+	background-color: #ff9406;
+}
+
+.icon-tuijian {
+	background-color: #00b7ee;
+}
+
+.icon-xin {
+	background-color: #ff3852;
+}
+
+
+/*热力榜样式结束*/
+
+#recipes-main {
+	margin: 30px auto;
+	width: 800px;
+}
+
+#recipes-main-class {
+	display: inline-block;
+	padding: 0 10px;
+	border-left: 5px solid #efefef;
+	text-align: center;
+	vertical-align: top;
+}
+
+#recipes-main-class a {
+	display: block;
+	width: 100px;
+	padding: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #676767;
+}
+
+#recipes-main-class a:hover {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f44336;
+}
+
+
+/*文章列表样式开始*/
+
+#recipes-main-list {
+	display: inline-block;
+	vertical-align: top;
+	width: 660px;
+}
+
+.recipes {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 640px;
+	height: 130px;
+	border-radius: 10px;
+	border: 1px solid #bfbfbf;
+	background-color: #ffffff;
+	-moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipes-images {
+	float: left;
+	border-radius: 10px;
+	width: 130px;
+	height: 130px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	vertical-align: top;
+}
+
+
+/*清除上面的浮动*/
+
+.clearfloat:after {
+	content: "";
+	/*设置内容为空*/
+	height: 0;
+	/*高度为0*/
+	line-height: 0;
+	/*行高为0*/
+	display: block;
+	/*将文本转为块级元素*/
+	visibility: hidden;
+	/*将元素隐藏*/
+	clear: both;
+	/*清除浮动*/
+}
+
+.clearfloat {
+	zoom: 1;
+	/*为了兼容IE*/
+}
+
+.recipes-text-package {
+	display: inline-block;
+	margin-left: 10px;
+	width: 500px;
+	height: 130px;
+	vertical-align: top;
+}
+
+.recipes-text {
+	display: block;
+	width: 500px;
+	height: 106px;
+	text-decoration: none;
+	color: #333333;
+}
+
+.recipes-text:hover {
+	text-decoration: underline;
+}
+
+.recipes-text span:nth-child(1) {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.recipes-text span:nth-child(2) {
+	display: block;
+	height: 76px;
+	font-size: 14px;
+}
+
+.recipes-info {
+	width: 500px;
+	height: 24px;
+	text-align: right;
+}
+
+.recipes-info-icon {
+	display: inline-block;
+	padding: 0px 10px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 10px;
+	border-radius: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #ff835c;
+	/*color: #b1b1b1;
+	border: 2px solid #b1b1b1;*/
+}
+
+
+/*文章列表样式结束*/
+
+
+/*公共分页样式开始*/
+
+.pages a,
+.pages span {
+	padding: 0 5px;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	min-width: 20px;
+	border: 1px solid #bfbfbf;
+	color: #333333;
+	background-color: #ffffff;
+	-moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.pages a:hover {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	background-color: #f44336;
+}
+
+.pages span {
+	color: #6d6d76;
+}
+
+
+/*公共分页样式结束*/
+
+
+/*css字符截取*/
+
+
+/*.font-length{
+	white-space:nowrap;
+	word-break: keep-all;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}*/
+
+
+/*前台页脚*/
+
+#front-desk-footer {
+	width: 790px;
+	margin: 10px auto;
+	border-top: 1px dashed #b7b7b7;
+	font-size: 15px;
+	color: #757575;
+	text-align: center;
+}
+
+#front-desk-footer-year {
+	font-style: normal
+}
+
+#front-desk-footer a {
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #f44336;
+}
+
+#front-desk-footer a:hover {
+	color: #c70e00;
+}
+
+#front-desk-footer em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+#front-desk-footer span {
+	display: block;
+	padding: 5px;
+}
+
+
+/*details.jsp页面样式*/
+
+#details-background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+#details {
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+#details #front-desk-footer,
+#details #outer-frame {
+	position: static;
+}
+
+#details #outer-frame {
+	margin: 80px auto 0;
+	border-radius: 5px;
+}
+
+#details #front-desk-footer {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	margin: 30px auto 0;
+	border: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+#details-cookbook {
+	margin: 20px;
+	width: 760px;
+}
+
+.details-cookbook-info {
+	padding: 5px;
+	display: block;
+}
+
+.details-info {
+	padding: 10px;
+	text-align: center;
+}
+
+.details-info-icon {
+	display: inline-block;
+	padding: 0px 10px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 10px;
+	border-radius: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #2196f3;
+}
+
+.compute-sub,
+.compute-add {
+	width: 25px;
+	height: 25px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.compute-sub {
+	margin-right: -6px;
+	vertical-align: text-top;
+}
+
+.compute-add {
+	margin-left: -6px;
+	vertical-align: text-top;
+}
+
+.compute-hide {
+	display: none;
+}
+
+.compute-box {
+	display: inline-block;
+	width: 50px;
+	height: 23px;
+	line-height: 23px;
+	color: #666666;
+	background-color: #ffffff;
+	border: 1px solid #959595;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+#details-like-images {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #fb7315;
+}
+
+#details-like-text {
+	margin: 10px auto;
+	width: 800px;
+	height: 500px;
+	color: #ffffff;
+	text-align: center;
+}
+
+#details-like-text span:nth-child(2) {
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#details-like-text span:nth-child(3) {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.details-bottom-button-box {
+	margin: 10px auto;
+	width: 760px;
+	text-align: center;
+}
+
+.details-bottom-button {
+	width: 150px;
+	line-height: 30px;
+	color: #ffffff;
+	background-color: #f44336;
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+}
+
+.details-bottom-button:hover {
+	background-color: #ff6a00;
+}
+
+#details-discuss {
+	padding: 5px;
+	width: 760px;
+	border-top: 5px solid #D8D8D8;
+}
+
+.details-discuss-lump {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-bottom: 1px dashed #B7B7B7;
+}
+
+.details-discuss-lump-images {
+	display: inline-block;
+	width: 70px;
+	border-radius: 50%;
+	vertical-align: top;
+}
+
+.details-discuss-lump-text {
+	display: inline-block;
+	margin-left: 10px;
+	min-width: 675px;
+	min-height: 70px;
+	vertical-align: top;
+	font-size: 15px;
+	color: #666666;
+}
+
+.details-discuss-lump-time {
+	display: block;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.details-discuss-lump-user {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 15px;
+	color: #795548;
+	font-weight: bold;
+}
+
+.details-discuss-lump-user span {
+	padding: 0 5px;
+	border: 2px solid #fafa1c;
+	color: #e9e93b;
+	font-size: 12px;
+	line-height: 12px;
+	height: 15px;
+	border-radius: 15px;
+}
+
+#details-discuss .pages {
+	width: 760px;
+	text-align: center;
+}
+
+#details-discuss .pages span {
+	border: none;
+	-moz-box-shadow: 0px 0px 0px;
+	-webkit-box-shadow: 0px 0px 0px;
+	box-shadow: 0px 0px 0px;
+}
+
+.news-24h {
+	margin: 0 auto;
+	padding: 10px;
+	width: 780px;
+}
+
+.news-24h span {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+	padding-left: 5px;
+	border-left: 5px solid #666666;
+}
+
+.news-24h a {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 25px;
+	height: 25px;
+	font-weight: bold;
+	border-radius: 15px;
+	color: #ffffff;
+	background-color: #ff9800;
+	text-decoration: none;
+}
+
+.news-24h a:hover {
+	background-color: #ff6a00;
+}
+
+.news-24h:nth-child(2) a {
+	background-color: #00bcd4;
+}
+
+.news-24h:nth-child(2) a:hover {
+	background-color: #03a9f4;
+}
+
+
+/*#news-essays{
+	width: 800px;
+	分几列
+	-moz-column-count:4;Firefox
+	-webkit-column-count:4; Safari and Chrome 
+	column-count:4;
+	占比
+	-moz-column-gap:30px;  Firefox 
+	-webkit-column-gap:30px; Safari and Chrome 
+	column-gap:30px;
+}*/
+
+
+/*#news-essays a{
+	margin-bottom: 10px;
+	break-inside: avoid;
+	column-span: all;
+	padding: 10px;
+	display: inline-block;
+	width: 160px;
+	background-color: #2196F3;
+	border-radius: 10px;
+	
+}*/
+
+
+/*.news-essays-imgs{
+	margin:0 auto 10px;
+	width: 160px;
+	height: 160px;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}*/
+
+#news-essays {
+	margin: 20px auto;
+	width: 800px;
+	-moz-column-count: 3;
+	/* Firefox */
+	-webkit-column-count: 3;
+	/* Safari and Chrome */
+	column-count: 3;
+	-moz-column-gap: 20px;
+	/* Firefox */
+	-webkit-column-gap: 20px;
+	/* Safari and Chrome */
+	column-gap: 20px;
+}
+
+.news-essays-ones {
+	break-inside: avoid;
+	padding: 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid #d5d5d5;
+	color: #ffffff;
+}
+
+.news-essays-ones a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.news-essays-title,
+.news-essays-text {
+	display: block;
+}
+
+.news-essays-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.news-essays-text {
+	display: block;
+	font-size: 16px;
+}
+
+.news-essays-url,
+.news-essays-user,
+.news-essays-info {
+	display: block;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.news-essays-url {
+	padding: 10px 10px 0 10px;
+	border-radius: 20px 20px 0 0;
+}
+
+.news-essays-user {
+	padding: 5px 10px 5px 10px;
+}
+
+.news-essays-info {
+	padding: 5px;
+	border-radius: 0 0 20px 20px;
+	text-align: center;
+	background-color: #ff1f53;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#news-essays .pages {
+	width: 100%;
+	text-align: center;
+}
+
+#news-essays .pages span {
+	border: none;
+	-moz-box-shadow: 0px 0px 0px;
+	-webkit-box-shadow: 0px 0px 0px;
+	box-shadow: 0px 0px 0px;
+}
+
+#news-essays .pages span,
+#news-essays .pages a {
+	margin: 5px auto;
+}
+
+#essay-title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+}
+
+#essay-user {
+	margin: 20px auto;
+	padding-bottom: 10px;
+	/*border-bottom: 1px dashed #B7B7B7;*/
+}
+
+#essay-user .essay-user-images {
+	width: 80px;
+	border-radius: 50%;
+}
+
+.essay-user-images,
+#essay-userInfo,
+#essay-click {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#essay-userInfo {
+	margin-left: 10px;
+}
+
+.essay-user-name,
+.essay-time {
+	display: block;
+}
+
+.essay-user-name a {
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+
+.essay-user-name a:hover {
+	text-decoration: underline;
+}
+
+.essay-user-name span {
+	font-size: 12px;
+	font-weight: bold;
+	height: 15px;
+	border: 2px solid #fafa1c;
+	border-radius: 15px;
+	padding: 0 10px;
+	color: #e9e93b;
+}
+
+.essay-time {
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}
+
+#essay-pages {
+	text-align: center;
+}
+
+#essay-pages a {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #666666;
+}
+
+#essay-pages a:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+#essay-content {
+	margin-bottom: 10px;
+}
+
+#essay-click {
+	text-align: right;
+	width: 400px;
+}
+
+#essay-click-button {
+	padding: 0 10px;
+	border: none;
+	outline: none;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #03a9f4;
+}
+
+#essay-click-button:hover {
+	background-color: #2196f3;
+}
+
+#essay-top-top {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 20;
+}
+
+#essay-top-top img {
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/*用户归档页面样式*/
+
+.user-essay-list {
+	margin: 0 auto 20px;
+}
+
+.user-essay-time,
+.user-essay-time-list {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.user-essay-time-list {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 5px solid #666666;
+}
+
+.user-essay-time span {
+	display: block;
+}
+
+.user-essay-time-list a {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+	border-bottom: 1px dashed #666666;
+}
+
+.user-essay-time-list a:hover {
+	color: #F44336;
+}
+
+.user-essay-user-font {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.user-essay-text-font {
+	font-size: 15px;
+}

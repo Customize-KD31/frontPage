@@ -1,0 +1,25 @@
+@charset "utf-8";
+#shopping-car-button{
+	position: fixed;
+	top: 60px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	background-color: #F44336;
+	border-radius: 0 0 0 50px;
+	z-index: 10;
+}
+#shopping-car-box{
+	display: none;
+	position: fixed;
+	top: 60px;
+	right: 0px;
+	width: 300px;
+	height: 500px;
+	background-color: #00B7EE;
+	overflow-y: auto;
+	z-index: 10;
+}
+
+
+
