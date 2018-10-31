@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<%@include file="inc/base.jsp" %>
 		<title>文章名 - 作者 :: Customize</title>
-		<script type="text/javascript" src="js/jquery.mousewheel.js" ></script>
+		<script type="text/javascript" src="user/js/jquery.mousewheel.js" ></script>
 	</head>
 
 	<body>
